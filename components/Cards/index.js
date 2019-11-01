@@ -21,7 +21,7 @@
 const cardContainer = document.querySelector('.cards-container');
 
 const lambdaObject = axios.get("https://lambda-times-backend.herokuapp.com/articles").then( (response) => {
-    console.log(response.data);
+    //console.log(response.data);
     // function to create cards.
     Object.keys(response.data.articles).forEach( (key) => {
         response.data.articles[key].forEach( (articleInfo) => {
